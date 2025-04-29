@@ -128,7 +128,7 @@ AS CNT_UNIQUE_CS
 FROM RETAIL_SALES GROUP BY CATEGORY 
 ```
 
-9. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17) **:
+9. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 ```sql
 WITH HOURLY_SALE AS
 (SELECT *, CASE WHEN EXTRACT(HOUR FROM SALE_TIME)
